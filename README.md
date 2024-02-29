@@ -12,7 +12,7 @@ Ovaj projekat, napisan u Python-u, predstavlja maleni web skrejper dizajniran za
 
 3. **Prilagodljivost:** Lako se prilagođava kako bi ciljao različite sajtove za nekretnine ili se prilagodio promenama u strukturi sajta.
 
-## Preduvjeti
+## Preduslovi
 
 - Python 3.x
 - MongoDB instaliran i pokrenut / Hostovan MongoDB Atlas
