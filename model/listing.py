@@ -1,8 +1,15 @@
-from bs4 import PageElement
 import utils
 
 
 class Listing:
+    id = None
+    title = None
+    city = None
+    price = None
+    area = None
+    furniture = None
+    date = None
+
     def __init__(self, id=None, title=None, city=None, price=None, area=None, furniture=None, date=None, div=None):
         if div:
             try:
