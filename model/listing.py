@@ -22,8 +22,10 @@ class Listing:
 
                 city_element = div.find_all('a', itemprop='category', href=True)[2]
                 self.city = city_element.text.strip() if city_element else None
+
             except Exception as e:
                 print(e)
+
         else:
             self.id = id
             self.title = title
