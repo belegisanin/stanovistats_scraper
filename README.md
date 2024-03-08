@@ -1,75 +1,73 @@
-# stanovistats_scraper - Projekat za skrejping nekretnina
+# stanovistats_scraper - Real Estate Scraper Project
 
-## Pregled
+**Overview**
 
-Ovaj projekat, napisan u Python-u, predstavlja maleni web skrejper dizajniran za prikupljanje informacija o cenama stanova i drugim povezanim detaljima sa popularnog onlajn izvora. Prikupljeni podaci zatim se čuvaju u MongoDB bazi podataka radi dalje analize ili upotrebe.
+This Python project is a small web scraper designed to collect information about apartment prices and other related details from a popular online source. The collected data is then stored in a MongoDB database for further analysis or use.
 
-## Funkcionalnosti
+**Features**
 
-1. **Web Skrejping:** Koristi tehnike web skrejpinga za izdvajanje informacija o cenama stanova, lokaciji i drugim relevantnim podacima sa sajtova za nekretnine.
+1. **Web Scraping:** Uses web scraping techniques to extract information about apartment prices, location, and other relevant data from real estate websites.
 
-2. **Integracija sa MongoDB-om:** Čuva prikupljene podatke u MongoDB bazi podataka radi lakšeg dohvata i manipulacije.
+2. **MongoDB Integration:** Stores the collected data in a MongoDB database for easier retrieval and manipulation.
 
-3. **Prilagodljivost:** Lako se prilagođava kako bi ciljao različite sajtove za nekretnine ili se prilagodio promenama u strukturi sajta.
+3. **Adaptability:** Can be easily adapted to target different real estate websites or adjust to changes in website structure.
 
-## Preduslovi
+**Prerequisites**
 
 - Python 3.x
-- MongoDB instaliran i pokrenut / Hostovan MongoDB Atlas
-- Potrebni Python paketi se mogu instalirati koristeći:
+- MongoDB installed and running (or hosted MongoDB Atlas)
+- Required Python packages can be installed using:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+  ```bash
+  pip install -r requirements.txt
+  ```
 
-## Korišćenje
+**Usage**
 
-1. **Klonirajte repozitorijum:**
+1. **Clone the repository:**
 
-    ```bash
-    git clone https://github.com/belegisanin/stanovistats_scraper.git
-    ```
+  ```bash
+  git clone [https://github.com/belegisanin/stanovistats_scraper.git](https://github.com/belegisanin/stanovistats_scraper.git)
+  ```
 
-2. **Navigirajte do direktorijuma projekta:**
+2. **Navigate to the project directory:**
 
-    ```bash
-    cd stanovistats_scraper
-    ```
+  ```bash
+  cd stanovistats_scraper
+  ```
 
-3. **Konfiguracija:**
+3. **Configuration:**
 
-    Napraviti datoteku `.env` kako biste dodali URL-ove sajtova za nekretnine koje želite obraditi i auth za MongoDB.
+  Create a file named `.env` to add the URLs of the real estate websites you want to scrape and authentication details for MongoDB.
 
-4. **Pokrenite Skrejper:**
+4. **Run the Scraper:**
 
-    ```bash
-    python main.py
-    ```
+  ```bash
+  python main.py
+  ```
 
-    Ovo će pokrenuti proces skrejpinga i popuniti MongoDB bazu podataka prikupljenim podacima.
+  This will start the scraping process and populate the MongoDB database with the collected data.
 
-## Konfiguracija
+**Configuration**
 
-Datoteka `.env` sadrži parametre kao što su MongoDB detalji veze i URL-ovi sajtova. Prilagodite ovu datoteku prema svojim preferencama.
+The `.env` file contains parameters such as MongoDB connection details and website URLs. Customize this file according to your preferences.
 
 ```python
-# Konfiguracija MongoDB-a
+# MongoDB configuration
 CONNECTION_STRING = mongodb://localhost:27017/...
 
-# URL za skrejping
+# URL for scraping
 URL=https://...
 ```
 
-## Napomena
+**Notes**
 
-1. Proverite da li vaše aktivnosti web skrejpinga poštuju uslove korišćenja ciljanih sajtova.
+1. Make sure your web scraping activities comply with the terms of service of the targeted websites.
 
-2. Periodično proveravajte i ažurirajte skrejper u skladu sa promenama u strukturi sajtova.
+2. Periodically check and update the scraper according to changes in the website structures.
 
-3. Ovaj projekat je u svrhu edukacije i treba ga koristiti odgovorno.
+3. This project is for educational purposes and should be used responsibly.
 
-## Licenca
+**License**
 
-Ovaj projekat se nalazi pod MIT Licencom / This project is licenced under the MIT Licence
-
-Slobodno doprinesite, prijavite probleme ili predložite poboljšanja!
+This project is licensed under the MIT License. Feel free to contribute.
